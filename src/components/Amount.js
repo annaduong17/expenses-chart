@@ -1,6 +1,6 @@
-function Amount() {
+function Amount({ value }) {
   return(
-    <div>$52.36</div>
+    <div>{value}</div>
   )
 }
 

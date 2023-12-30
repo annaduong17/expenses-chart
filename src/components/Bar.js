@@ -1,8 +1,8 @@
-function Bar() {
+function Bar({ value }) {
   return(
     <div>
       <div className="bar"></div>
-      <p>mon</p>
+      <p>{value}</p>
     </div>
   )
 }
