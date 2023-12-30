@@ -1,6 +1,6 @@
 function Amount({ value }) {
   return(
-    <div>{value}</div>
+    <div key={value}>{value}</div>
   )
 }
 

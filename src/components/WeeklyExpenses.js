@@ -5,9 +5,9 @@ import Data from '../data.json';
 function WeeklyExpenses() {
   const renderedItems = Data.map((item, index) => {
     return(
-      <div key={index}>
-        <Amount value={item.amount} />
-        <Bar value={item.day} />
+      <div>
+        <Amount key={index} value={item.amount} />
+        <Bar key={index} value={item.day} />
       </div>
     )
   })

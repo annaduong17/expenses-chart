@@ -1,6 +1,6 @@
 function Bar({ value }) {
   return(
-    <div>
+    <div key={value}>
       <div className="bar"></div>
       <p>{value}</p>
     </div>
