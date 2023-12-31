@@ -24,7 +24,12 @@ function WeeklyExpenses() {
     })
 
     return(
-      <div key={index} className="flex-col data">
+      <div 
+        key={index} 
+        className="flex-col data"
+        onMouseEnter={() => setHoveredBar(index)}
+        onMouseLeave={() => setHoveredBar(null)}
+      >
         {isBarHovered && <Amount 
           key={item.amount} 
           value={item.amount} 
@@ -33,9 +38,7 @@ function WeeklyExpenses() {
           style={{ height: item.amount * 3 + 'px' }}
           key={item.value} 
           value={item.day} 
-          className={classes} 
-          onMouseEnter={() => setHoveredBar(index)}
-          onMouseLeave={() => setHoveredBar(null)} 
+          className={classes}  
         />
       </div>
     )
