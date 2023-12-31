@@ -12,4 +12,64 @@ body {
   margin: 0;
   font-size: 18px;
   font-family: 'DM Sans', sans-serif;
+  
 }
+
+.app {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: $cream;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+#container {
+  min-width: 450px;
+}
+
+#balance-container {
+  background-color: $red;
+  margin-bottom: 20px;
+  padding: 25px 30px;
+  color: $pale-orange;
+  
+
+  h2 {
+    font-size: 14px;
+    font-weight: 100;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+  }
+}
+
+#expenses-container {
+  background-color: $pale-orange;
+
+
+  
+}
+
+.border-round {
+  border-radius: 15px;
+}
+

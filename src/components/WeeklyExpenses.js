@@ -15,7 +15,7 @@ function WeeklyExpenses() {
   return(
     <div>
       <h2>Spending - Last 7 days</h2>
-      {renderedItems}
+      <div className='flex-row'>{renderedItems}</div>
     </div>
   )
 }

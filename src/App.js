@@ -6,11 +6,12 @@ function App() {
     console.log(response);
   })
 
-
   return(
-    <div>
-      <Balance />
-      <Expenses />
+    <div className='app'>
+      <div id='container' className='flex-col'>
+        <Balance />
+        <Expenses />
+      </div>
     </div>
   )
 }
