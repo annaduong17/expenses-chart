@@ -1,7 +1,8 @@
-function Bar({ value }) {
+function Bar({ value, className }) {
+  console.log(className);
   return(
-    <div key={value}>
-      <div className="bar"></div>
+    <div>
+      <div className={className}></div>
       <p>{value}</p>
     </div>
   )

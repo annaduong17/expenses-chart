@@ -1,13 +1,32 @@
+import clsx from 'clsx';
 import Amount from './Amount';
 import Bar from './Bar';
 import Data from '../data.json';
 
 function WeeklyExpenses() {
+  const amountsArr = [];
+  
+  for (const object of Data) {
+    amountsArr.push(object.amount);
+  }
+ 
+  const largestAmount = Math.max(...amountsArr);
+  console.log(largestAmount);
+
+  
+
   const renderedItems = Data.map((item, index) => {
+
+
+    const classes = clsx({
+      "blue-bar": item.amount === largestAmount,
+      "bar": true,
+    })
+
     return(
-      <div className='flex-col data'>
-        <Amount key={index} value={item.amount} />
-        <Bar key={index} value={item.day} />
+      <div key={index} className="flex-col data">
+        <Amount key={item.amount} value={item.amount} />
+        <Bar key={item.value} value={item.day} className={classes} />
       </div>
     )
   })

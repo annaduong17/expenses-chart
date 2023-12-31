@@ -81,6 +81,10 @@ body {
       opacity: 50%;
     }
   }
+  
+  .blue-bar {
+    background-color: $cyan;
+  }
 }
 
 #weekly-container {
@@ -99,6 +103,8 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+
+
 
 .data {
   justify-content: center;
@@ -156,4 +162,6 @@ body {
     }
   }
 }
+
+
 
