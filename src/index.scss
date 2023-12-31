@@ -72,10 +72,11 @@ body {
   }
 
   .bar {
-    width: 40px;
+    width: 45px;
     height: 100px;
     background-color: $red;
     border-radius: 3px;
+    margin-inline: 8px;
 
     &:hover {
       opacity: 50%;
@@ -100,9 +101,10 @@ body {
 }
 
 #bars {
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-end;
   margin-top: 15px;
+  height: 220px;
 }
 
 .data {
