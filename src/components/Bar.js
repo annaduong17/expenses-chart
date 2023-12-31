@@ -1,8 +1,16 @@
-function Bar({ value, className, style }) {
-  console.log(className);
+
+
+function Bar({ value, className, style, onMouseEnter, onMouseLeave }) {
+
   return(
     <div>
-      <div style={style} className={className}></div>
+      <div 
+        style={style} 
+        className={className}
+        onMouseEnter={onMouseEnter}
+        oneMouseLeave={onMouseLeave}
+      >
+      </div>
       <p>{value}</p>
     </div>
   )
