@@ -6,6 +6,7 @@ $dark-brown: hsl(25, 47%, 15%);
 $med-brown: hsl(28, 10%, 53%);
 $cream: hsl(27, 66%, 92%);
 $pale-orange: hsl(33, 100%, 98%);
+$gray: gray;
 
 body {
   box-sizing: border-box;
@@ -64,12 +65,45 @@ body {
 
 #expenses-container {
   background-color: $pale-orange;
+  padding: 25px 30px;
 
+  h2 {
+    margin: 0;
+  }
 
-  
+  .bar {
+    width: 40px;
+    height: 100px;
+    background-color: $red;
+    border-radius: 3px;
+
+    &:hover {
+      opacity: 50%;
+    }
+  }
+}
+
+#weekly-container {
+  p {
+    margin-top: 10px;
+    color: $gray;
+    font-size: 12px;
+  }
 }
 
 .border-round {
   border-radius: 15px;
 }
+
+#bars {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.data {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 

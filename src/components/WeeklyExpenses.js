@@ -5,7 +5,7 @@ import Data from '../data.json';
 function WeeklyExpenses() {
   const renderedItems = Data.map((item, index) => {
     return(
-      <div>
+      <div className='flex-col data'>
         <Amount key={index} value={item.amount} />
         <Bar key={index} value={item.day} />
       </div>
@@ -13,9 +13,9 @@ function WeeklyExpenses() {
   })
   
   return(
-    <div>
+    <div id='weekly-container'>
       <h2>Spending - Last 7 days</h2>
-      <div className='flex-row'>{renderedItems}</div>
+      <div id='bars' className='flex-row'>{renderedItems}</div>
     </div>
   )
 }
