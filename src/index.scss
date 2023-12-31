@@ -6,7 +6,6 @@ $dark-brown: hsl(25, 47%, 15%);
 $med-brown: hsl(28, 10%, 53%);
 $cream: hsl(27, 66%, 92%);
 $pale-orange: hsl(33, 100%, 98%);
-$gray: gray;
 
 body {
   box-sizing: border-box;
@@ -86,7 +85,7 @@ body {
 #weekly-container {
   p {
     margin-top: 10px;
-    color: $gray;
+    color: $med-brown;
     font-size: 12px;
   }
 }
@@ -106,4 +105,13 @@ body {
   text-align: center;
 }
 
+#amount {
+  font-size: 14px;
+  color: $pale-orange;
+  background-color: $dark-brown;
+  padding: 5px;
+  margin-block: 5px;
+  border-radius: 3px;
+  letter-spacing: 1px;
+}
 
