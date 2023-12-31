@@ -1,8 +1,8 @@
-function Bar({ value, className }) {
+function Bar({ value, className, style }) {
   console.log(className);
   return(
     <div>
-      <div className={className}></div>
+      <div style={style} className={className}></div>
       <p>{value}</p>
     </div>
   )

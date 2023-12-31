@@ -81,7 +81,7 @@ body {
       opacity: 50%;
     }
   }
-  
+
   .blue-bar {
     background-color: $cyan;
   }
@@ -101,10 +101,8 @@ body {
 
 #bars {
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-end;
 }
-
-
 
 .data {
   justify-content: center;

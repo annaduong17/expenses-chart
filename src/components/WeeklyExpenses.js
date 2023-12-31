@@ -11,12 +11,9 @@ function WeeklyExpenses() {
   }
  
   const largestAmount = Math.max(...amountsArr);
-  console.log(largestAmount);
 
-  
 
   const renderedItems = Data.map((item, index) => {
-
 
     const classes = clsx({
       "blue-bar": item.amount === largestAmount,
@@ -26,7 +23,7 @@ function WeeklyExpenses() {
     return(
       <div key={index} className="flex-col data">
         <Amount key={item.amount} value={item.amount} />
-        <Bar key={item.value} value={item.day} className={classes} />
+        <Bar style={{ height: item.amount * 3 + 'px' }} key={item.value} value={item.day} className={classes} />
       </div>
     )
   })
